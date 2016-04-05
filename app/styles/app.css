@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* This removes the border around the viewport in old versions of IE */
+  width: 100%;
+  background: #fff;
+  min-width: 600px;
+  /* Minimum width of layout - remove line if not required */
+  /* The min-width property does not work in old versions of Internet Explorer */
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 90%;
+}
+
+h2,
+h3 {
+  margin: 5px 0 0 30px;
+  padding: 0;
+}
+
+h1 {
+  margin: 20px 0 20px 0;
+  padding: 0;
+}
+
+img {
+  margin: 10px 0 5px;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  padding: 7px;
+  background-color: #fff;
+  display: block;
+  margin: 0 auto;
+}
+
+.img {
+  background-color: #1e90ff;
+  padding: 50px;
+}
+
+
+/* column container */
+
+.colmask {
+  position: relative;
+  /* This fixes the IE7 overflow hidden bug */
+  clear: both;
+  float: left;
+  width: 100%;
+  /* width of whole page */
+  overflow: hidden;
+  /* This chops off any overhanging divs */
+}
+
+
+/* common column settings */
+
+.colright,
+.colmid,
+.colleft {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+.col1 {
+  float: left;
+  position: relative;
+  padding: 0 0 1em 0;
+  overflow: hidden;
+  background-color: #e6f3ff;
+  text-align: center;
+}
+
+.col2 {
+  float: left;
+  position: relative;
+  padding: 0 0 1em 0;
+  overflow: hidden;
+  background-color: #e6f3ff;
+}
+
+
+/* 2 Column (left menu) settings */
+
+.leftmenu {
+  background: #fff;
+  /* right column background colour */
+}
+
+.leftmenu .colleft {
+  right: 75%;
+  /* right column width */
+}
+
+.leftmenu .col1 {
+  top: 15px;
+  width: 71%;
+  /* right column content width */
+  left: 102%;
+  /* 100% plus left column left padding */
+}
+
+.leftmenu .col2 {
+  top: 15px;
+  width: 23%;
+  /* left column content width (column width minus left and right padding) */
+  left: 6%;
+  /* (right column left and right padding) plus (left column left padding) */
+}
