@@ -1,0 +1,20 @@
+<body>
+
+  <div class="colmask leftmenu">
+    <div class="colleft">
+      <div class="col1">
+      <h1> Select listing to view information.</h1>
+      </div>
+      <div class="col2">
+        {{#each model as |listing|}}
+          {{#link-to "listing" listing tagName="div"}}
+            <h2>{{listing.name}}</h2>
+            <h3>{{listing.position}}</h3>
+          {{/link-to}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+
+</body>
+
